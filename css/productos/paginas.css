@@ -1,0 +1,37 @@
+/* estilos para la sección de paginación */
+.pagination-section {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center; /* centra verticalmente */
+    margin: 20px auto 0 auto; /* esto elimina el desplazamiento lateral */
+    padding: 20px 0;
+}
+
+
+  
+  .pagination {
+    display: flex; /* usa flexbox */
+    gap: 5px; /* agrega espacio entre los elementos */
+  }
+  
+  .pagination .page-number {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex; /* hace que el contenido esté centrado */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination .page-number:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .pagination .page-number.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }

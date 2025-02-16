@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Productos</title>
+  <link rel="stylesheet" href="css/compra/compra.css">
+  <link rel="stylesheet" href="css/productos/navbarp.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      
+      <a href="index.html" class="logo-link">
+          <div class="logo-container">
+              <img src="Imagenes/logo.jpg" alt="Logo Fundación" class="logo-img">
+              <div class="logo-text">Mininos Felices</div>
+          </div>
+      </a>
+      <span id="menu-toggle">☰</span>
+      <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="/index.html#quienes-somos">Quiénes Somos</a></li>
+          <li><a href="/index.html#donaciones">Donaciones</a></li>
+          <li><a href="/index.html#visitanos">Visítanos</a></li>
+          <li><a href="/index.html#contacto">Contáctanos</a></li>
+      </ul>
+            
+         
+            
+        
+    </nav>
+  </header>
+
+  <section class="productos">
+  
+  <div class="hero">
+    <div class="hero-content">
+        <h1>  <span class="highlight">Carrito</span> 
+    
+        
+    </div>
+  </section>
+  <div class="cart-container">
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+          <th>Eliminar</th> <!-- Nueva columna -->
+        </tr>
+      </thead>
+      <tbody id="cart-items-container">
+        <!-- Los productos se insertarán aquí dinámicamente -->
+      </tbody>
+    </table>
+  
+    <div class="cart-summary">
+      <p>Subtotal: $<span id="cart-subtotal">0</span></p>
+      <p>Total: $<span id="cart-total">0</span></p>
+      <button id="finalize-purchase" class="checkout-btn">Comprar</button>
+    </div>
+  </div>
+  
+      
+    </div>
+  </main>
+  <script src="js/compra.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+</html>

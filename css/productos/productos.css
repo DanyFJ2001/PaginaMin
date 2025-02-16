@@ -1,0 +1,532 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-content {
+  color: #fff;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+  color: #333;
+  background: #aaff00; /* Verde limón */
+  padding: 0 10px;
+  border-radius: 5px;
+}
+/* Estilos generales para la sección de productos */
+.product-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo claro para contrastar */
+}
+
+/* Estilos para el sidebar */
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el rango de precios */
+.price-range {
+  margin-bottom: 20px;
+}
+
+.price-range h3 {
+  font-size: 18px;
+  color: #2c3e50; /* Color de texto oscuro */
+  margin-bottom: 10px;
+}
+
+#price-slider {
+  width: 100%;
+  margin-bottom: 10px;
+  accent-color: #27ae60; /* Color verde para el slider */
+}
+
+.price-range p {
+  font-size: 14px;
+  color: #34495e; /* Color de texto gris oscuro */
+}
+
+.apply-btn {
+  background-color: #27ae60; /* Verde */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #219653; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Estilos para las categorías */
+.Categorias h3 {
+  font-size: 18px;
+  color: #2c3e50; /* Color de texto oscuro */
+  margin-bottom: 10px;
+}
+
+.Categorias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Categorias ul li {
+  margin-bottom: 10px;
+}
+
+.category-link {
+  text-decoration: none;
+  color: #34495e; /* Color de texto gris oscuro */
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.category-link:hover {
+  color: #27ae60; /* Verde al pasar el mouse */
+}
+
+/* Estilos para los productos */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+}
+
+.product {
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 15px;
+  width: calc(25% - 20px); /* 4 productos por fila */
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.product h4 {
+  font-size: 16px;
+  color: #2c3e50; /* Color de texto oscuro */
+  margin: 10px 0;
+}
+
+.product .price {
+  font-size: 14px;
+  color: #27ae60; /* Verde para el precio */
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  background-color: #27ae60; /* Verde */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #219653; /* Verde más oscuro al pasar el mouse */
+}
+
+/*-------------------------------------*/
+/* Fondo y estilo del título de la sección de productos */
+.productos {
+  background-image: url('/Imagenes/Gatos/Fondo.jpg'); /* Fondo degradado + imagen */
+  background-position: center;
+  background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  color: #fff;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 250px 0;
+}
+
+.productos-titulo h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #aaff00; /* Verde limón */
+}
+
+.productos-titulo p {
+  font-size: 20px;
+  color: #aaff00; /* Verde limón */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.product-section {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+  color: #aaff00; /* Verde limón */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 8px;
+}
+
+.price-range .slider {
+  width: 100%;
+}
+
+.apply-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #aaff00; /* Verde limón */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.products {
+  display: grid; /* Usamos grid para la disposición */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Las tarjetas tendrán un ancho mínimo de 250px */
+  gap: 20px; /* Espacio entre tarjetas */
+  padding: 20px; /* Espaciado interno */
+  justify-items: center; /* Centra las tarjetas en su contenedor */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.product {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%; /* Las tarjetas ocupan todo el ancho disponible */
+  height: 350px; /* Mantiene la altura constante */
+  max-width: 350px; /* Limita el ancho máximo de las tarjetas */
+}
+
+.product img {
+  width: 100%;
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+  border-radius: 8px;
+}
+
+.product h4 {
+  margin: 10px 0 5px;
+}
+
+.product .price {
+  color: #ff6347;
+  font-weight: bold;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen del producto */
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+/* Botón de añadir al carrito */
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background-color: #aaff00; /* Verde limón */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* Mostrar el botón al pasar el mouse */
+.image-container:hover .add-to-cart-btn {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+/* Efecto hover del botón */
+.add-to-cart-btn:hover {
+  background-color: #9acc00; /* Verde más oscuro */
+}
+
+/* Estilos para el contador del carrito */
+.cart-container {
+  position: relative;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#cart-count {
+  background-color: #e63900;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 14px;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+/* Tooltip del carrito */
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.tooltip ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.tooltip li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tooltip img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.tooltip p {
+  font-weight: bold;
+}
+
+.checkout-btn {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Mostrar tooltip al pasar el mouse */
+.cart-container:hover .tooltip {
+  display: block;
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 1200px) {
+  .product-section {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .products {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 36px;
+  }
+
+  .productos-titulo h1 {
+      font-size: 36px;
+  }
+
+  .productos-titulo p {
+      font-size: 18px;
+  }
+
+  .products {
+      display: flex; /* Cambiamos a flex para pantallas pequeñas */
+      flex-wrap: nowrap; /* Los productos no se envuelven, se colocan en fila */
+      overflow-x: auto; /* Permite el desplazamiento horizontal */
+      justify-content: flex-start; /* Alinea los productos al inicio */
+      padding: 10px; /* Reducimos el padding para pantallas pequeñas */
+  }
+
+  .product {
+      flex: 0 0 auto; /* Los productos no se estiran ni se encogen */
+      width: 200px; /* Ancho fijo para los productos en pantallas pequeñas */
+      height: 300px; /* Reducimos la altura para pantallas pequeñas */
+      margin-right: 10px; /* Espacio entre productos */
+  }
+
+  .product img {
+      height: 150px; /* Reducimos la altura de las imágenes */
+  }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 36px;
+  }
+
+  .productos-titulo h1 {
+      font-size: 36px;
+  }
+
+  .productos-titulo p {
+      font-size: 18px;
+  }
+
+  .products {
+      display: flex; /* Cambiamos a flex para pantallas pequeñas */
+      flex-direction: column; /* Los productos se apilan verticalmente */
+      align-items: center; /* Centra los productos horizontalmente */
+      gap: 20px; /* Espacio entre productos */
+      padding: 10px; /* Reducimos el padding para pantallas pequeñas */
+      overflow-x: visible; /* Eliminamos el desplazamiento horizontal */
+  }
+
+  .product {
+      width: 100%; /* Los productos ocupan el ancho completo */
+      max-width: 300px; /* Limita el ancho máximo */
+      height: auto; /* Altura automática para adaptarse al contenido */
+      margin-right: 0; /* Eliminamos el margen derecho */
+  }
+
+  .product img {
+      height: 150px; /* Reducimos la altura de las imágenes */
+  }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 36px;
+  }
+
+  .productos-titulo h1 {
+      font-size: 36px;
+  }
+
+  .productos-titulo p {
+      font-size: 18px;
+  }
+
+  .products {
+      display: flex; /* Cambiamos a flex para pantallas pequeñas */
+      flex-direction: column; /* Los productos se apilan verticalmente */
+      align-items: center; /* Centra los productos horizontalmente */
+      gap: 20px; /* Espacio entre productos */
+      padding: 20px; /* Aumentamos el padding para más espacio */
+      overflow-x: visible; /* Eliminamos el desplazamiento horizontal */
+  }
+
+  .product {
+      width: 100%; /* Los productos ocupan el ancho completo */
+      max-width: 400px; /* Aumentamos el ancho máximo para que sean más grandes */
+      height: auto; /* Altura automática para adaptarse al contenido */
+      margin-right: 0; /* Eliminamos el margen derecho */
+      padding: 20px; /* Aumentamos el padding interno para más espacio */
+  }
+
+  .product img {
+      height: 180px; /* Aumentamos la altura de las imágenes */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 24px;
+  }
+
+  .productos-titulo h1 {
+      font-size: 24px;
+  }
+
+  .productos-titulo p {
+      font-size: 16px;
+  }
+
+  .product {
+      max-width: 350px; /* Ancho máximo más pequeño pero aún grande */
+      padding: 15px; /* Padding ligeramente reducido para pantallas muy pequeñas */
+  }
+
+  .product img {
+      height: 150px; /* Altura de imagen reducida pero aún grande */
+  }
+
+
+  /* Estilos para la sección de paginación */
+}

@@ -1,0 +1,162 @@
+/* Carrusel */
+#carrusel {
+    margin: 50px auto; /* centra el carrusel horizontalmente y añade separación superior */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px; /* limita el ancho del carrusel */
+}
+
+.carousel {
+    display: flex;
+    width: 100%; /* ajusta al 100% del contenedor */
+    max-width: 900px; /* tamaño máximo del carrusel */
+    background-color: white;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-image {
+    position: relative;
+    flex: 2;
+    display: flex;
+    overflow: hidden;
+    height: 300px;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-image img.active {
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.section-carousel {
+    display: flex; /* organiza los elementos en fila */
+    gap: 20px; /* espacio entre la imagen y el carrusel */
+    align-items: center; /* alinea verticalmente */
+    max-width: 1000px; /* limita el ancho del contenedor */
+    margin: auto; /* centra el contenedor */
+}
+
+.extra-image {
+    flex-shrink: 0; /* evita que la imagen se redimensione */
+    width: 200px; /* ancho fijo */
+    height: 300px; /* altura fija */
+    overflow: hidden; /* recorta el contenido si es necesario */
+    border-radius: 10px;
+    
+    
+}
+
+.extra-image img {
+    width: 100%; /* ocupa todo el ancho del contenedor */
+    height: 100%; /* ocupa toda la altura del contenedor */
+    object-fit: cover; /* asegura que la imagen no se deforme */
+}
+
+.carousel-container {
+    flex: 1; /* el carrusel ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+.carousel-content {
+    flex: 1;
+    background-color: #aaff00; /* Verde limón */
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.carousel-content p {
+    font-size: 1rem;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+/* Media Queries para Responsive */
+@media (max-width: 768px) {
+    .section-carousel {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .extra-image {
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-image {
+        height: 250px;
+    }
+
+    .carousel-content {
+        padding: 15px;
+    }
+
+    .carousel-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #carrusel {
+        padding: 10px;
+    }
+
+    .carousel-image {
+        height: 200px;
+    }
+
+    .carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}

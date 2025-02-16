@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* reducido */
+    background: url('../../Imagenes/Gatos/fondo\ donacion.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.hero-content {
+    color: #fff;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .highlight {
+    color: #333;
+    background: #aaff00; /* Verde limón */
+    padding: 0 10px;
+    border-radius: 5px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+  body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f8da;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .donaciones {
+      padding: 40px 20px;
+      background-color: #f0f8da;
+      text-align: center;
+  }
+  
+  h2 {
+      color: #4caf50;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 20px;
+  }
+  
+  .contenido {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .informacion {
+    padding-top: 0; /* Elimina espacio extra arriba */
+}
+
+.informacion h3 {
+    margin-top: -30px; /* Ahora sí lo sube */
+}
+
+
+  .informacion p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+  }
+  
+  .bancos {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .columna {
+      flex: 1;
+      padding: 10px;
+  }
+  
+  .columna ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .columna li {
+      background: #e8f5e9;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #333;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+  }
+  
+  video {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .donacion-insumos {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.donacion-insumos h2 {
+    font-size: 26px;
+    color: #333;
+}
+
+.donacion-insumos p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.insumos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.insumo {
+    text-align: center;
+    max-width: 400px;
+}
+
+.insumo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.insumo p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+  
+
+
+

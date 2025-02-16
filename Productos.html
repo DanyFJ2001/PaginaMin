@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Productos</title>
+  <link rel="stylesheet" href="/css/productos/productos.css">
+  <link rel="stylesheet" href="/css/productos/navbarp.css">
+  <link rel="stylesheet" href="/css/productos/paginas.css">
+  <link rel="stylesheet" href="css/index/footer.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      
+        <a href="index.html" class="logo-link">
+            <div class="logo-container">
+                <img src="Imagenes/logo.jpg" alt="Logo Fundación" class="logo-img">
+                <div class="logo-text">Mininos Felices</div>
+            </div>
+        </a>
+        <span id="menu-toggle">☰</span>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="/index.html#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="/index.html#donaciones">Donaciones</a></li>
+            <li><a href="/index.html#visitanos">Visítanos</a></li>
+            <li><a href="/index.html#contacto">Contáctanos</a></li>
+        </ul>
+    
+        <div class="icons">
+            
+            <div class="cart-container">
+              <a href="#cart" class="cart-icon">Cart 🛒 <span id="cart-count">0</span></a>
+              <div id="cart-tooltip" class="tooltip">
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="cart-total">0</span></p>
+                <button id="checkout-btn" class="checkout-btn">Comprar</button>
+              </div>
+            
+        </div>
+    </nav>
+  </header>
+
+  <section class="productos">
+  
+  <div class="hero">
+    <div class="hero-content">
+        <h1>Bienvenido a  <span class="highlight">Nuestra Tienda</span> 
+        <p>Compra productos que ayudarán a nuestros amigos felinos</p>
+        
+    </div>
+  </section>
+  <div class="product-section">
+    <div class="sidebar">
+      <div class="price-range">
+        <h3>Rango de precio </h3>
+        <input id="price-slider" type="range" min="1" max="100" value="100" step="10">
+        <p>Max Price: $<span id="max-price">200</span></p>
+        <button id="apply-price" class="apply-btn">Apply</button>
+      </div>
+      <div class="Categorias">
+        <h3>Categorias</h3>
+        <ul>
+          <li><a href="#" class="category-link" data-category="all">Todos</a></li>
+          <li><a href="#" class="category-link" data-category="accesorios">Accesorios</a></li>
+          <li><a href="#" class="category-link" data-category="ropa">Ropa</a></li>
+          
+          <li><a href="#" class="category-link" data-category="nutrition">Nutrition</a></li>
+          <li><a href="#" class="category-link" data-category="toys">Toys</a></li>
+        </ul>
+      </div>
+    
+    </div>
+
+
+    <section>
+    <div class="products">
+      <div class="product" data-price="20" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Billetera.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Billetera</h4>
+        <p class="price">$20</p>
+      </div>
+      <div class="product" data-price="1.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Cartuchera.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Cartuchera</h4>
+        <p class="price">$1.00</p>
+      </div>
+      <div class="product" data-price="5" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Gato.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Gato coleccionable</h4>
+        <p class="price">$5.00</p>
+      </div>
+      <div class="product" data-price="5" data-category="ropa">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Medias.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Medias</h4>
+        <p class="price">$5.00</p>
+      </div>
+      <div class="product" data-price="10" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Alfombras.jpg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Alfombras</h4>
+        <p class="price">$10.00</p>
+      </div>
+      
+      <div class="product" data-price="25" data-category="ropa">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Buzo.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Buzo</h4>
+        <p class="price">$25.00</p>
+      </div>
+      <div class="product" data-price="10" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Collar.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Collar con placa</h4>
+        <h5 >Bajo pedido </h5>
+        <p class="price">$10.00</p>
+      </div>
+      <div class="product" data-price="50" data-category="toys">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Peluche.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Peluche Gigante</h4>
+        <h5>Disponible 1 </h5>
+        <p class="price">$50.00</p>
+      </div>
+      <div class="product" data-price="20.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Bisuteria.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Bisuteria </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$20.00</p>
+      </div>
+      <div class="product" data-price="28.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Juego.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Juegos de baño</h4>
+        <h5>Bajo pedido </h5>
+        
+        <p class="price">$28.00</p>
+      </div>
+      <div class="product" data-price="35.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/casa.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Casa para gato </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$35.00</p>
+      </div>
+
+      <div class="product" data-price="7.00" data-category="toys">
+        <div class="image-container">
+          <img src="Imagenes/Productos/peluchoconcatnip.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Peluches con catnip </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$7.00</p>
+      </div>
+      <div class="product" data-price="20.00" data-category="accesorios">
+
+        <div class="image-container">
+          <img src="Imagenes/Productos/Rascadores.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Rascadores </h4>
+        <h5>Bajo pedido </h5>
+      
+        <p class="price">$20.00</p>
+      </div>
+      <div class="product" data-price="10.00" data-category="nutrition">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Arena.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Arena Alemana </h4>
+        <p class="price">$10.00</p>
+      </div>
+      <div class="product" data-price="15" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Monedero.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Monedero afelpado </h4>
+        <p class="price">$15</p>
+      </div>
+      <div class="product" data-price="5.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Labial.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+
+
+        <h4>Labiales en forma de gato </h4>
+        <p class="price">$5.00</p>
+      </div>
+
+      <div class="product" data-price="15.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Lampara.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Lampara de mesa </h4> 
+        <p class="price">$15.00</p>
+      </div>
+
+      
+
+      <div class="product" data-price="42.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Mochila.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Mochilas transparentes </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$42.00</p>
+      </div>
+      
+      
+
+
+      <div class="product" data-price="10.00"  data-category="nutrition">
+        <div class="image-container">
+          <img src="Imagenes/Productos/catnip.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Catnip </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$10.00</p>
+      </div>
+
+      <div class="product" data-price="20.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/cojin.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Cojines de gato </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$20.00</p>
+      </div>
+
+      <div class="product" data-price="15.00" data-category="ropa">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Pantuflas.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Pantuflas </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$15.00</p>
+      </div>
+
+      <div class="product" data-price="20.00" data-category="ropa">
+        <div class="image-container">
+          <img src="Imagenes/Productos/camisetas.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Camisetas </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$20.00</p>
+      </div>
+      <div class="product" data-price="10.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/masetero.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Portamacetas </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$10.00</p>
+      </div>
+      <div class="product" data-price="1.00" data-category="nutrition">
+        <div class="image-container">
+          <img src="Imagenes/Productos/Dulces.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Dulces </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$1.00</p>
+      </div>
+      <div class="product" data-price="20.00" data-category="accesorios">
+        <div class="image-container">
+          <img src="Imagenes/Productos/cobertor.jpeg" alt="Rain coat">
+          <button class="add-to-cart-btn">Añadir al carrito</button>
+        </div>
+        <h4>Cobertor </h4>
+        <h5>Bajo pedido </h5>
+        <p class="price">$20.00</p>
+      </div>
+
+
+      <section class="pagination-section">
+      <div >
+        <div class="pagination">
+          <a href="#" class="page-number">1</a>
+          <a href="#" class="page-number">2</a>
+          <a href="#" class="page-number">3</a>
+          <a href="#" class="page-number">4</a>
+        </div>
+      </section>
+    </section>
+  </div>
+  <footer class="footer" id="contacto">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="Imagenes/logo1.jpg" alt="Mininos Felices Logo" class="footer-img" />
+            <h3>Fundacion 
+            <br>
+            Mininos Felices
+            </h3>
+        </div>
+        <div class="footer-social">
+            <h4>Síguenos en redes sociales</h4>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@mininos_felices?_t=ZM-8tv76o8Lvyp&_r=1" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon">
+                        <path fill="currentColor"
+                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/share/1EHnFWtfmN/" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
+                        <path fill="currentColor"
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/refugio_mininosfelices?igsh=dnFkenhqbWQ4ODF2" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon">
+                        <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+              
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <p>© 2024 Fundacion Mininos Felices. Todos los derechos reservados.</p>
+            <p>Dirección: Naranjas, Quito 170184</p>
+            <p>Teléfono: 096 938 3691</p>
+            <p>Email: refumininosf@outlook.com</p>
+        </div>
+    </div>
+</footer>
+  <script src="js/rango.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/paginacion.js"></script>
+  <script src="js/categoria.js"></script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,256 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos base para el navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #a5d820;
+  padding: 15px 20px;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.logo-link:active {
+  transform: scale(0.95);
+}
+
+/* Menú de navegación */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #78a813;
+}
+
+/* Botón de menú hamburguesa */
+#menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+#menu-toggle:hover {
+  color: #78a813;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #a5d820;
+      width: 100%;
+      display: none;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links a {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  #menu-toggle {
+      display: block;
+  }
+}
+
+/* Hero Section */
+.hero-content {
+  text-align: center;
+  color: #fff;
+  padding: 50px 20px;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+  color: #333;
+  background: #aaff00;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Sección de productos */
+.productos {
+  background-image: url('../Imagenes/Gatos/5.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.productos-titulo h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #aaff00;
+}
+
+.productos-titulo p {
+  font-size: 1.2rem;
+  color: #aaff00;
+}
+
+/* Contenedor del carrito */
+.cart-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+/* Tabla del carrito */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table thead {
+  background-color: #00AF00;
+  color: #fff;
+}
+
+.cart-table th, .cart-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternar colores en filas */
+.cart-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Imágenes responsivas en la tabla */
+.cart-table img {
+  max-width: 50px;
+  height: auto;
+  display: block;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .cart-table th, .cart-table td {
+      padding: 10px;
+      font-size: 0.9rem;
+  }
+
+  .cart-table img {
+      max-width: 40px;
+  }
+}
+
+/* Input de cantidad */
+.quantity input[type="number"] {
+  width: 50px;
+  font-size: 1rem;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Botón de eliminar */
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Resumen del carrito */
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+/* Botón de compra */
+.checkout-btn {
+  background-color: #AFFF00;
+  color: #000;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #8fdd00;
+}
+
+/* Responsive para tablas en móviles */
+@media (max-width: 768px) {
+  .cart-table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+
+  .cart-summary {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+  }
+
+  .checkout-btn {
+      width: 100%;
+      padding: 15px;
+  }
+}

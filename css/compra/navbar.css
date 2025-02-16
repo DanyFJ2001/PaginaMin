@@ -1,0 +1,144 @@
+/* Estilos base para el navbar */
+.navbar {
+    background-color: #afff00; /* limón claro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hacer clic en el logo */
+.logo-link {
+    display: inline-block;
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Mantener color de texto */
+    transition: transform 0.2s ease; /* Suavizar el efecto */
+}
+
+/* Efecto de aplastar al hacer clic */
+.logo-link:active {
+    transform: scale(0.9); /* Escala ligeramente */
+}
+
+/* Asegurar estilos previos del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+
+
+/* Estilo uniforme para el enlace activo */
+.nav-links a.active {
+    color: white;
+    background-color: #78a813; /* Verde más oscuro */
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Resposividad para pantallas móviles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+        background-color: #a5d820;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a {
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Botón de menú para pantallas pequeñas */
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#menu-toggle:hover {
+    color: #78a813;
+}
+
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+}

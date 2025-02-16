@@ -1,0 +1,220 @@
+.schedule-appointment {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #ccffcc;
+    background-color: #f8fff8;
+    border-radius: 8px;
+  }
+  
+  .schedule-appointment .info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .schedule-appointment .info h2 {
+    color: #66cc66;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-appointment .info p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  /* Contenedor general */
+.about-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+  }
+  
+  /* Sección "About Us" */
+  .about-us {
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2a572a; /* Verde oscuro */
+    text-align: center;
+  }
+  
+  .about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .about-us img {
+    width: 100%;
+    max-width: 300px; /* Tamaño máximo reducido */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un mejor acabado */
+  }
+  
+  /* Sección "Contact Us" */
+  .contact-us {
+    text-align: center;
+    max-width: 600px;
+    background-color: #AAFF00; /* Verde brillante */
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .contact-us h2 span {
+    background-color: #fff;
+    color: #2a572a; /* Verde oscuro */
+    padding: 0 5px;
+    border-radius: 4px;
+  }
+  
+  .contact-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-us input,
+  .contact-us textarea,
+  .contact-us select {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .contact-us button {
+    background-color: #2a572a; /* Verde oscuro */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-us button:hover {
+    background-color: #1f401f; /* Verde más oscuro */
+  }
+  
+  .contact-us button:active {
+    background-color: #144014; /* Verde aún más oscuro */
+    transform: scale(0.98);
+  }
+  
+  /* Validaciones visuales */
+  .contact-us input.error,
+  .contact-us textarea.error,
+  .contact-us select.error {
+    border: 2px solid red;
+    background-color: #ffe6e6; /* Fondo suave para errores */
+  }
+  
+  .contact-us input.valid,
+  .contact-us textarea.valid,
+  .contact-us select.valid {
+    border: 2px solid green;
+    background-color: #e6ffe6; /* Fondo suave para campos válidos */
+  }
+  
+  /* Loader */
+  #loader {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #2a572a; /* Verde oscuro */
+    font-weight: bold;
+  }
+  
+  /* Mensaje de éxito */
+  #successMessage {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #006400; /* Verde bosque */
+    font-weight: bold;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 imágenes por fila */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px; /* Espacio superior para separar de texto */
+}
+
+.gallery-item img {
+    width: 100%; /* Hace que las imágenes ocupen todo el espacio de la celda */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla, cubriendo el espacio */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
+}
+
+/* Efecto de hover para la galería */
+.gallery-item img:hover {
+    transform: scale(1.1); /* Hace que la imagen se agrande ligeramente al pasar el ratón */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 imagen por fila en pantallas pequeñas */
+    }
+}
+
+  
+  
+  /* Aseguramos que el diseño sea responsivo */
+  @media (min-width: 768px) {
+    .about-contact-container {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  
+    .about-us,
+    .contact-us {
+      text-align: left;
+    }
+  }
